@@ -10,5 +10,7 @@
             "type": "admin",
             "enabled": true
         }
-    ]
+    ],
+    "sources": [],
+    "rooms": []
 }
