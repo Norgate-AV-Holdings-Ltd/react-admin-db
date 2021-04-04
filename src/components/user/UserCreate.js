@@ -1,6 +1,6 @@
-import React from "react";
+import { React } from "react";
 import {
-    Edit,
+    Create,
     SimpleForm,
     TextInput,
     PasswordInput,
@@ -16,11 +16,10 @@ import {
     validatePassword,
 } from "./UserValidation";
 
-const UserEdit = (props) => {
+const UserCreate = (props) => {
     return (
-        <Edit title="Edit User" {...props}>
-            <SimpleForm>
-                <TextInput disabled source="id" />
+        <Create title="Create a User" {...props}>
+            <SimpleForm redirect="list">
                 <TextInput
                     label="First Name"
                     source="firstName"
@@ -53,12 +52,22 @@ const UserEdit = (props) => {
                         { id: "Power", name: "Power" },
                         { id: "Standard", name: "Standard" },
                     ]}
+                    defaultValue="Standard"
                 />
-                <BooleanInput label="Enabled" source="enabled" />
-                <DateInput label="Created" source="created" disabled />
+                <BooleanInput
+                    label="Enabled"
+                    source="enabled"
+                    defaultValue={true}
+                />
+                <DateInput
+                    label="Created"
+                    source="created"
+                    defaultValue={new Date()}
+                    disabled
+                />
             </SimpleForm>
-        </Edit>
+        </Create>
     );
 };
 
-export default UserEdit;
+export default UserCreate;
