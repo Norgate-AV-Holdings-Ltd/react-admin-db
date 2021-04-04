@@ -1,5 +1,26 @@
 {
-    "users": [],
-    "sources": [],
-    "rooms": []
+  "users": [
+    {
+      "type": "Power",
+      "enabled": true,
+      "created": "2021-04-04T23:42:41.426Z",
+      "firstName": "John",
+      "lastName": "Doe",
+      "userName": "johndoe",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "type": "Admin",
+      "enabled": true,
+      "created": "2021-04-04T23:42:41.426Z",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "userName": "janedoe",
+      "password": "123456",
+      "id": 2
+    }
+  ],
+  "sources": [],
+  "rooms": []
 }
