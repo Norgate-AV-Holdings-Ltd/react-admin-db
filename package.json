@@ -1,6 +1,6 @@
 {
     "name": "react-admin-db",
-    "proxy": "http://localhost:3000",
+    "proxy": "http://localhost:5000",
     "version": "0.1.0",
     "private": true,
     "license": "MIT",
@@ -9,6 +9,7 @@
         "@testing-library/jest-dom": "^5.11.4",
         "@testing-library/react": "^11.1.0",
         "@testing-library/user-event": "^12.1.10",
+        "concurrently": "^6.0.0",
         "json-server": "^0.16.3",
         "prop-types": "^15.7.2",
         "ra-data-simple-rest": "^3.13.4",
@@ -23,7 +24,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "server": "json-server --watch ./database/db.json --port 5000"
+        "server": "json-server --watch ./database/db.json --port 5000 --middlewares ./src/range.js"
     },
     "eslintConfig": {
         "extends": [

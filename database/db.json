@@ -1,5 +1,14 @@
 {
-    "users": [],
-    "sources": [],
-    "rooms": []
+    "users": [
+        {
+            "id": 1,
+            "firstName": "John",
+            "lastName": "Doe",
+            "userName": "johndoe",
+            "email": "john.doe@example.com",
+            "password": "1234",
+            "type": "admin",
+            "enabled": true
+        }
+    ]
 }
