@@ -7,8 +7,12 @@ import UserCreate from "./components/user/UserCreate";
 import SourceList from "./components/source/SourceList";
 import SourceEdit from "./components/source/SourceEdit";
 import SourceCreate from "./components/source/SourceCreate";
+import RoomList from "./components/room/RoomList";
+import RoomEdit from "./components/room/RoomEdit";
+import RoomCreate from "./components/room/RoomCreate";
 import UserIcon from "@material-ui/icons/People";
 import InputIcon from "@material-ui/icons/Input";
+import MeetingRoomIcon from "@material-ui/icons/MeetingRoom";
 
 const dataProvider = simpleRestProvider("http://localhost:3000");
 
@@ -27,6 +31,13 @@ const App = () => (
             create={SourceCreate}
             edit={SourceEdit}
             icon={InputIcon}
+        />
+        <Resource
+            name="rooms"
+            list={RoomList}
+            create={RoomCreate}
+            edit={RoomEdit}
+            icon={MeetingRoomIcon}
         />
     </Admin>
 );

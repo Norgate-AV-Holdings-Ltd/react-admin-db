@@ -35,5 +35,12 @@
       "id": 2
     }
   ],
-  "rooms": []
+  "rooms": [
+    {
+      "loginEnabled": true,
+      "created": "2021-04-05T00:25:40.435Z",
+      "name": "MRO",
+      "id": 1
+    }
+  ]
 }
