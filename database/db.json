@@ -2,7 +2,7 @@
   "users": [
     {
       "type": "Power",
-      "enabled": true,
+      "enabled": false,
       "created": "2021-04-04T23:42:41.426Z",
       "firstName": "John",
       "lastName": "Doe",
