@@ -9,7 +9,8 @@ It has been developed with the primary intention of being used with AMX/Crestron
 
 ## How to use
 
-The application is built to run in a Docker container which runs on port 3000.
+The application is built to run in a Docker container which runs on port 3000. You will need to have Docker and Docker Compose
+installed to use this application.
 
 The application is still in the development stage and as such the Docker container is currently running a development build.
 
