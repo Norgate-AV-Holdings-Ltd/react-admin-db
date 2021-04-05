@@ -12,4 +12,6 @@ RUN yarn install
 COPY ./database/* ./database/
 COPY . ./
 
+EXPOSE 3000
+EXPOSE 5000
 CMD ["yarn", "start"]
